@@ -1,3 +1,5 @@
+import '../Registration.css'
+
 function Registration() {
     return (
       <>
@@ -45,7 +47,7 @@ function Registration() {
               By creating an account, you agree to our{" "}
               <a href="#">Terms & Privacy</a>.
             </p>
-            <button type="submit" className="registerbtn">
+            <button type="submit" className="regBtn">
               Register
             </button>
           </div>

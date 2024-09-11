@@ -1,0 +1,101 @@
+/* Container styles */
+form {
+  padding: 0 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Form input styles */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Register button */
+.reg-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.reg-btn:hover {
+  opacity: 1;
+}
+
+/* Sign-in link */
+.container.signin {
+  text-align: center;
+  padding: 16px;
+}
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button styles */
+.regBtn {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  padding: 15px 20px; /* Padding around the button */
+  font-size: 18px; /* Larger text size */
+  font-weight: bold; /* Bold text */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer on hover */
+  width: 100%; /* Full width button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Button hover effect */
+.regBtn:hover {
+  background-color: #18682a; /* Darker green on hover */
+}
