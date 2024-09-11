@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -6,9 +7,9 @@ import Services from "./components/Services";
 import Tours from "./components/Tours";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
-import "./App.css";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Registration from "./components/Registration";
+import Layout from "./components/Layout";
+import "./App.css";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       <Navbar />
       <Hero />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/" element={<Layout />}/>
+        <Route index element={<Home />} />
+        <Route path="/services" element={<Services />} /> {/* Default Route */}
         <Route path="/tours" element={<Tours />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
