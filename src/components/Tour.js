@@ -1,7 +1,28 @@
-const Tour = ({ image, date, title, info, location, duration, cost }) => {
+import React, { useState } from "react";
+
+const Tour = ({
+  id,
+  image,
+  date,
+  title,
+  info,
+  location,
+  duration,
+  cost,
+  onDelete,
+}) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleDelete = () => {
+    onDelete(id); // Pass the item's ID to the parent component for deletion
+  };
+
   return (
     <article className="tour-card">
       <div className="tour-img-container">
+        <button onClick={handleDelete} className="delete-button">
+          Delete
+        </button>
         <img src={image} className="tour-img" alt={title} />
         <p className="tour-date">{date}</p>
       </div>
