@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -17,13 +17,14 @@ function App() {
       <Navbar />
       <Hero />
       <Routes>
-        <Route path="/" element={<Layout />}/>
-        <Route index element={<Home />} />
-        <Route path="/services" element={<Services />} /> {/* Default Route */}
-        <Route path="/tours" element={<Tours />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/registration" element={<Registration />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/services" element={<Services />} /> {/* Default Route */}
+          <Route path="/tours" element={<Tours />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/registration" element={<Registration />} />
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
