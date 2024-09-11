@@ -4,7 +4,7 @@ const Service = ({ id, icon, title, text, onDelete }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleDelete = () => {
-    onDelete(id); // Pass the item's ID to the parent component for deletion
+    onDelete(id); 
   };
 
   return (
