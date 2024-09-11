@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const Service = ({ id, icon, title, text, onDelete }) => {
-  const [expanded, setExpanded] = useState(false);
+
 
   const handleDelete = () => {
-    onDelete(id); 
+    onDelete(id);
   };
 
   return (
